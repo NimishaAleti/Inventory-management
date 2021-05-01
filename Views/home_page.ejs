@@ -1,0 +1,49 @@
+<html lang = "en">
+    <head>
+        <title>Befit Collections</title>
+        <meta charset = "utf-8">
+        <meta = "viewport" content = "width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color:#ffcccc;">
+        <h1 class="c1">Befit Collections Inventory Management System</h1>
+        <h2>Welcome!!</h2>
+        <p>Fashion as an ‘adornment’ of the body. Clothing fit is generally assessed by qualitative methods. Although a quantitative method is more desirable, it is difficult to achieve. 
+        In everyday life and language 'dress', 'clothing', 'fashion', 'garment', 'attire',‘apparel’, ‘style’, ‘adornment’ and ‘costume’ are often employed 
+        interchangeably .<br></p1
+        <br>
+        <p> This practice may be part of a culture of collecting as consumers acquire and add to personal – and personally curated – collections of, say, handbags, neckties or shoes. 
+        Sporting attire, or adaptations of it, was integrated into the everyday wardrobe as casual wear, befitting an increasingly informal lifestyle 
+        that was modern, busy and active. </p>
+
+        <h3 class="c3-for-home_page"><a href = "/create" class="c2">Add New Product</a></h3>
+        <h3 class="c3-for-home_page"><a href = "/updatestock" class="c2">Update Stock</a></h3>
+        <h3 class="c3-for-home_page"><a href = "/deleteproduct" class="c2">Delete Product</a></h3>
+        <h3 class="c3-for-home_page"><a href = "/sales" class="c2">Sales Details</a></h3>
+        <table>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Category</th>
+                    <th>Type</th>
+                    <th>Colour</th>
+                    <th>Size</th>
+                    <th>Stock</th>
+                    <th>Selling Price</th>
+                </tr>
+                <% for(var i = 0; i<data.length; i++){%>
+                    <tr>
+                        <td><%= data[i].prod_id%></td>
+                        <td><%= data[i].prod_cat%></td>
+                        <td><%= data[i].prod_type%></td>
+                        <td><%= data[i].prod_col%></td>
+                        <td><%= data[i].prod_size%></td>
+                        <td><%= data[i].stock%></td>
+                        <td><%= data[i].selling_price%></td>
+                    </tr>
+                <% } %>
+            </table>
+        
+    </body>
+    
+    <footer>Copyright&#169Befit Collections</footer>
+</html>

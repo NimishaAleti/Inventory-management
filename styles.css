@@ -1,0 +1,46 @@
+.c1{
+	text-align : center;
+}
+h1 {
+	font-family: "Lucida Console", "Courier New", monospace;
+ }
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.c3-for-home_page{
+	text-align : center;
+}	
+.c2{
+	text-decoration : none;
+	color : purple;
+}
+p{
+	font-size: 20px;
+	text-align: left;
+}
+footer{
+	text-align : right;
+}
+
+table,th,td{
+	border:3px solid black;
+	border-collapse: collapse;
+	margin-left: auto;
+  margin-right: auto;
+	text-align: right;
+}
+th,td{
+	padding:15px;
+	text-align: center;
+}
+th{
+	background-color:indigo;
+	color:whitesmoke;
+}
+tr:nth-child(even){
+	background-color:cornsilk;
+}
+tr:nth-child(odd){
+	background-color:thistle;
+}

@@ -1,0 +1,36 @@
+<html lang = "en">
+    <head>
+        <title>Befit Collections</title>
+        <meta charset = "utf-8">
+        <meta = "viewport" content = "width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color:#ffe6e6;">
+        <h1 class="c1">Befit Collections Inventory Management System</h1>
+    <h3 class="c1">Sales Details</h3>
+        
+        <table>
+                <tr>
+                    <th>Purchase Date</th>
+                    <th>Product ID</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total Sales(in Rs)</th>
+                    
+                </tr>
+                <% for(var i = 0; i<data.length; i++){%>
+                    <tr>
+                        <td><%= data[i].date%></td>
+                        <td><%= data[i].prod_id%></td>
+                        <td><%= data[i].price%></td>
+                        <td><%= data[i].quantity%></td>
+                        <td><%= data[i].total_sales%></td>
+
+                    </tr>
+                <% } %>
+            </table>
+        
+    </body>
+    
+    <footer>Copyright&#169Befit Collections</footer>
+</html>
